@@ -2,67 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="31756" started-at="2018-05-05T15:43:32Z" finished-at="2018-05-05T15:44:04Z">
+  <suite name="Default suite" duration-ms="59" started-at="2018-05-28T06:15:07Z" finished-at="2018-05-28T06:15:07Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="31756" started-at="2018-05-05T15:43:32Z" finished-at="2018-05-05T15:44:04Z">
-      <class name="week6day1.CreateLeadUsingTestNG">
-        <test-method status="PASS" signature="excelName()[pri:0, instance:week6day1.CreateLeadUsingTestNG@185d8b6]" name="excelName" is-config="true" duration-ms="19" started-at="2018-05-05T21:13:32Z" finished-at="2018-05-05T21:13:32Z">
+    <test name="Default test" duration-ms="59" started-at="2018-05-28T06:15:07Z" finished-at="2018-05-28T06:15:07Z">
+      <class name="week9dailyhomeworks.ConvertLowerToUpperCase">
+        <test-method status="PASS" signature="main()[pri:0, instance:week9dailyhomeworks.ConvertLowerToUpperCase@1deb50e]" name="main" duration-ms="12" started-at="2018-05-28T11:45:07Z" finished-at="2018-05-28T11:45:07Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- excelName -->
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:week6day1.CreateLeadUsingTestNG@185d8b6]" name="login" is-config="true" duration-ms="13366" started-at="2018-05-05T21:13:33Z" finished-at="2018-05-05T21:13:46Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://leaftaps.com/opentaps]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[DemoSalesManager]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[crmsfa]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="createLead(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:week6day1.CreateLeadUsingTestNG@185d8b6]" name="createLead" duration-ms="15524" started-at="2018-05-05T21:13:46Z" data-provider="fetchData" finished-at="2018-05-05T21:14:02Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[HCL]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Bharathwaj]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[A]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createLead -->
-        <test-method status="PASS" signature="closeApp()[pri:0, instance:week6day1.CreateLeadUsingTestNG@185d8b6]" name="closeApp" is-config="true" duration-ms="2069" started-at="2018-05-05T21:14:02Z" finished-at="2018-05-05T21:14:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApp -->
-      </class> <!-- week6day1.CreateLeadUsingTestNG -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- main -->
+      </class> <!-- week9dailyhomeworks.ConvertLowerToUpperCase -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

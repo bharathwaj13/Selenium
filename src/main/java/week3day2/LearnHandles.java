@@ -14,7 +14,7 @@ public class LearnHandles {
 		ChromeDriver driver=new ChromeDriver();
 		driver.get("https://www.irctc.co.in/eticketing/loginHome.jsf");
 		driver.manage().window().maximize();
-		driver.findElementByLinkText("Contact Us").click();
+		driver.findElementByXPath("//a[text()=' CONTACT US ']").click();
 		Thread.sleep(3000);
 		Set<String> allWindowHandles = driver.getWindowHandles();
 		System.out.println(allWindowHandles.size());
