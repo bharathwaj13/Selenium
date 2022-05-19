@@ -11,6 +11,7 @@ public class ConvertLowerToUpperCase {
 		{
 			upper=upper+Character.toUpperCase(lower.charAt(i));
 		}
+		
 		System.out.println(upper);
 	}
 

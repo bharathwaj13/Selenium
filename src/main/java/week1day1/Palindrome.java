@@ -1,10 +1,11 @@
 package week1day1;
 
 public class Palindrome {
+	
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int inputNumber=123;
+		int inputNumber=121;
 		int copyInputNumber=inputNumber;
 		int reverseNumber=0;
 		while(inputNumber>0)

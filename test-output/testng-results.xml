@@ -1,17 +1,177 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="2" failed="2" ignored="0" total="4" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="59" started-at="2018-05-28T06:15:07Z" finished-at="2018-05-28T06:15:07Z">
+  <suite name="Suite" duration-ms="112118" started-at="2018-12-13T14:06:52Z" finished-at="2018-12-13T14:08:45Z">
     <groups>
+      <group name="regression">
+        <method signature="DeleteLeadUsingTestNG.deleteLead()[pri:0, instance:week5day2.DeleteLeadUsingTestNG@1df90b0]" name="deleteLead" class="week5day2.DeleteLeadUsingTestNG"/>
+        <method signature="DeleteLeadUsingTestNG.deleteLead()[pri:0, instance:week5day2.DeleteLeadUsingTestNG@ef309d]" name="deleteLead" class="week5day2.DeleteLeadUsingTestNG"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="CreateLeadUsingTestNG.createLead()[pri:0, instance:week5day2.CreateLeadUsingTestNG@12948e2]" name="createLead" class="week5day2.CreateLeadUsingTestNG"/>
+        <method signature="CreateLeadUsingTestNG.createLead()[pri:0, instance:week5day2.CreateLeadUsingTestNG@b494a6]" name="createLead" class="week5day2.CreateLeadUsingTestNG"/>
+      </group> <!-- smoke -->
     </groups>
-    <test name="Default test" duration-ms="59" started-at="2018-05-28T06:15:07Z" finished-at="2018-05-28T06:15:07Z">
-      <class name="week9dailyhomeworks.ConvertLowerToUpperCase">
-        <test-method status="PASS" signature="main()[pri:0, instance:week9dailyhomeworks.ConvertLowerToUpperCase@1deb50e]" name="main" duration-ms="12" started-at="2018-05-28T11:45:07Z" finished-at="2018-05-28T11:45:07Z">
+    <test name="Test" duration-ms="104906" started-at="2018-12-13T14:06:52Z" finished-at="2018-12-13T14:08:37Z">
+      <class name="week5day2.DeleteLeadUsingTestNG">
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:week5day2.DeleteLeadUsingTestNG@1df90b0]" name="login" is-config="true" duration-ms="11494" started-at="2018-12-13T19:37:38Z" finished-at="2018-12-13T19:37:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://leaftaps.com/opentaps]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[DemoSalesManager]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[crmsfa]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- main -->
-      </class> <!-- week9dailyhomeworks.ConvertLowerToUpperCase -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- login -->
+        <test-method status="FAIL" signature="deleteLead()[pri:0, instance:week5day2.DeleteLeadUsingTestNG@1df90b0]" name="deleteLead" duration-ms="45361" started-at="2018-12-13T19:37:50Z" finished-at="2018-12-13T19:38:35Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerExceptionat wdMethods.SeMethods.getText(SeMethods.java:131)at week5day2.DeleteLeadUsingTestNG.deleteLead(DeleteLeadUsingTestNG.java:31)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.lang.reflect.Method.invoke(Method.java:483)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteLead -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:week5day2.DeleteLeadUsingTestNG@1df90b0]" name="closeApp" is-config="true" duration-ms="2213" started-at="2018-12-13T19:38:35Z" finished-at="2018-12-13T19:38:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- week5day2.DeleteLeadUsingTestNG -->
+      <class name="week5day2.CreateLeadUsingTestNG">
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:week5day2.CreateLeadUsingTestNG@12948e2]" name="login" is-config="true" duration-ms="12989" started-at="2018-12-13T19:36:52Z" finished-at="2018-12-13T19:37:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://leaftaps.com/opentaps]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[DemoSalesManager]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[crmsfa]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="FAIL" signature="createLead()[pri:0, instance:week5day2.CreateLeadUsingTestNG@12948e2]" name="createLead" duration-ms="30612" started-at="2018-12-13T19:37:05Z" finished-at="2018-12-13T19:37:36Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerExceptionat wdMethods.SeMethods.click(SeMethods.java:105)at week5day2.CreateLeadUsingTestNG.createLead(CreateLeadUsingTestNG.java:13)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.lang.reflect.Method.invoke(Method.java:483)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createLead -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:week5day2.CreateLeadUsingTestNG@12948e2]" name="closeApp" is-config="true" duration-ms="2153" started-at="2018-12-13T19:37:36Z" finished-at="2018-12-13T19:37:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- week5day2.CreateLeadUsingTestNG -->
+    </test> <!-- Test -->
+    <test name="Test1" duration-ms="7156" started-at="2018-12-13T14:08:37Z" finished-at="2018-12-13T14:08:45Z">
+      <class name="week5day2.CreateLeadUsingTestNG">
+        <test-method status="FAIL" signature="login(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:week5day2.CreateLeadUsingTestNG@b494a6]" name="login" is-config="true" duration-ms="7033" started-at="2018-12-13T19:38:37Z" finished-at="2018-12-13T19:38:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://leaftaps.com/opentaps]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[DemoSalesManager]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[crmsfa]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closedfrom unknown error: web view not found  (Session info: chrome=70.0.3538.110)  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)Command duration or timeout: 0 millisecondsBuild info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'System info: host: 'BHARATHWAJ', ip: '192.168.247.2', os.name: 'Windows 8.1', os.arch: 'x86', os.version: '6.3', java.version: '1.8.0'Driver info: org.openqa.selenium.chrome.ChromeDriverCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\BHARAT~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}Session ID: 58eece42c29e94908ed987020d2ea0af*** Element info: {Using=id, value=username}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closedfrom unknown error: web view not found  (Session info: chrome=70.0.3538.110)  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)Command duration or timeout: 0 millisecondsBuild info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'System info: host: 'BHARATHWAJ', ip: '192.168.247.2', os.name: 'Windows 8.1', os.arch: 'x86', os.version: '6.3', java.version: '1.8.0'Driver info: org.openqa.selenium.chrome.ChromeDriverCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\BHARAT~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}Session ID: 58eece42c29e94908ed987020d2ea0af*** Element info: {Using=id, value=username}at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)at java.lang.reflect.Constructor.newInstance(Constructor.java:408)at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:365)at wdMethods.SeMethods.locateElement(SeMethods.java:58)at wdMethods.ProjectMethods.login(ProjectMethods.java:19)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.lang.reflect.Method.invoke(Method.java:483)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:451)at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)at org.testng.internal.Invoker.invokeMethod(Invoker.java:516)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="createLead()[pri:0, instance:week5day2.CreateLeadUsingTestNG@b494a6]" name="createLead" duration-ms="0" started-at="2018-12-13T19:38:44Z" finished-at="2018-12-13T19:38:44Z">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closedfrom unknown error: web view not found  (Session info: chrome=70.0.3538.110)  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)Command duration or timeout: 0 millisecondsBuild info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'System info: host: 'BHARATHWAJ', ip: '192.168.247.2', os.name: 'Windows 8.1', os.arch: 'x86', os.version: '6.3', java.version: '1.8.0'Driver info: org.openqa.selenium.chrome.ChromeDriverCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\BHARAT~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}Session ID: 58eece42c29e94908ed987020d2ea0af*** Element info: {Using=id, value=username}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closedfrom unknown error: web view not found  (Session info: chrome=70.0.3538.110)  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)Command duration or timeout: 0 millisecondsBuild info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'System info: host: 'BHARATHWAJ', ip: '192.168.247.2', os.name: 'Windows 8.1', os.arch: 'x86', os.version: '6.3', java.version: '1.8.0'Driver info: org.openqa.selenium.chrome.ChromeDriverCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\BHARAT~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}Session ID: 58eece42c29e94908ed987020d2ea0af*** Element info: {Using=id, value=username}at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)at java.lang.reflect.Constructor.newInstance(Constructor.java:408)at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:365)at wdMethods.SeMethods.locateElement(SeMethods.java:58)at wdMethods.ProjectMethods.login(ProjectMethods.java:19)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.lang.reflect.Method.invoke(Method.java:483)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:451)at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)at org.testng.internal.Invoker.invokeMethod(Invoker.java:516)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createLead -->
+        <test-method status="SKIP" signature="closeApp()[pri:0, instance:week5day2.CreateLeadUsingTestNG@b494a6]" name="closeApp" is-config="true" duration-ms="0" started-at="2018-12-13T19:38:44Z" finished-at="2018-12-13T19:38:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- week5day2.CreateLeadUsingTestNG -->
+      <class name="week5day2.DeleteLeadUsingTestNG">
+        <test-method status="SKIP" signature="login(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:week5day2.DeleteLeadUsingTestNG@ef309d]" name="login" is-config="true" duration-ms="0" started-at="2018-12-13T19:38:44Z" finished-at="2018-12-13T19:38:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="deleteLead()[pri:0, instance:week5day2.DeleteLeadUsingTestNG@ef309d]" name="deleteLead" duration-ms="0" started-at="2018-12-13T19:38:44Z" finished-at="2018-12-13T19:38:44Z">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closedfrom unknown error: web view not found  (Session info: chrome=70.0.3538.110)  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)Command duration or timeout: 0 millisecondsBuild info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'System info: host: 'BHARATHWAJ', ip: '192.168.247.2', os.name: 'Windows 8.1', os.arch: 'x86', os.version: '6.3', java.version: '1.8.0'Driver info: org.openqa.selenium.chrome.ChromeDriverCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\BHARAT~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}Session ID: 58eece42c29e94908ed987020d2ea0af*** Element info: {Using=id, value=username}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closedfrom unknown error: web view not found  (Session info: chrome=70.0.3538.110)  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)Command duration or timeout: 0 millisecondsBuild info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'System info: host: 'BHARATHWAJ', ip: '192.168.247.2', os.name: 'Windows 8.1', os.arch: 'x86', os.version: '6.3', java.version: '1.8.0'Driver info: org.openqa.selenium.chrome.ChromeDriverCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\BHARAT~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}Session ID: 58eece42c29e94908ed987020d2ea0af*** Element info: {Using=id, value=username}at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)at java.lang.reflect.Constructor.newInstance(Constructor.java:408)at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:365)at wdMethods.SeMethods.locateElement(SeMethods.java:58)at wdMethods.ProjectMethods.login(ProjectMethods.java:19)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.lang.reflect.Method.invoke(Method.java:483)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:451)at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)at org.testng.internal.Invoker.invokeMethod(Invoker.java:516)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteLead -->
+        <test-method status="SKIP" signature="closeApp()[pri:0, instance:week5day2.DeleteLeadUsingTestNG@ef309d]" name="closeApp" is-config="true" duration-ms="0" started-at="2018-12-13T19:38:44Z" finished-at="2018-12-13T19:38:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- week5day2.DeleteLeadUsingTestNG -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Suite -->
 </testng-results>
